@@ -7,6 +7,14 @@ const app = express();
 app.get("/", (req, res) => {
   res.send("Personal AI Workspace is running 🚀");
 });
+import express from "express";
+
+const app = express();
+
+// ROUTE TEST
+app.get("/", (req, res) => {
+  res.send("🚀 Personal AI Workspace is running!");
+});
 const httpServer = createServer(app);
 
 declare module "http" {
